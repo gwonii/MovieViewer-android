@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E9E9"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/tvDoCommentMovieTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/movieTitle"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <ImageView
+            android:id="@+id/ivDoCommentAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/white">
+
+        <RatingBar
+            android:id="@+id/rbDoEvaluate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:isIndicator="false"
+            android:rating="0"
+            android:stepSize="0.1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDoEvaluateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/inputRating"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rbDoEvaluate" />
+
+        <ImageView
+            android:id="@+id/ivCommentBackground"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/input_comment_box"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDoEvaluateText" />
+
+        <EditText
+            android:id="@+id/etDoComment"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/white"
+            android:text="@string/inputCommentGuide"
+            android:textColor="#A7A7A7"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/ivCommentBackground"
+            app:layout_constraintStart_toStartOf="@+id/ivCommentBackground"
+            app:layout_constraintTop_toTopOf="@+id/ivCommentBackground" />
+
+        <Button
+            android:id="@+id/btSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/save"
+            android:background="@drawable/save_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btCancel"
+            app:layout_constraintTop_toBottomOf="@+id/ivCommentBackground" />
+
+        <Button
+            android:id="@+id/btCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/cancel"
+            android:background="@drawable/cancel_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivCommentBackground" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

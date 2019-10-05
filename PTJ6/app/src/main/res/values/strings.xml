@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">씨네마 천국</string>
+    <string name="list_page">영화 목록</string>
+    <string name="detail_page">영화 상세</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_movie_list">영화 목록</string>
+    <string name="menu_movie_api">영화 API</string>
+    <string name="menu_movie_reservation">예매하기</string>
+    <string name="menu_sub_title">설정</string>
+    <string name="menu_user_settings">사용자 설정</string>
+
+    <string name="content_list_gundo_title">1. 군도</string>
+    <string name="content_list_gongjo_title">2. 공조</string>
+    <string name="content_list_theking_title">3. 더킹</string>
+    <string name="content_list_rezi_title">4. 레지던트 이블</string>
+    <string name="content_list_lucky_title">5. 럭키</string>
+    <string name="content_list_asura_title">6. 아수라</string>
+    <string name="content_list_summary">예매율 61.6% | 15세 관람가 | D-1</string>
+    <string name="content_reservation">예매율</string>
+    <string name="content_list_view_detail">상세보기</string>
+
+
+    <!--
+activity_main.xml
+-->
+
+    <string name="firstStory">군도, 백성을 구하라 \n양반과 탐관오리들의 착취가 극에 달했던 조선 철종 13년.\n힘 없는 백성의 편이 되어 세상을 바로잡고자 하는 의적떼인 군도(群盜), 지리산 추설이 있었다.</string>
+    <string name="secondStory">쌍칼 도치 vs 백성의 적 조윤\n잦은 자연재해, 기근과 관의 횡포까지 겹쳐 백성들의 삶이\n날로 피폐해 져 가는 사이, 나주 대부호의 서자로 조선\n최고의 무관 출신인 조윤은 극악한 수법으로 양민들을 수탈,\n삼남지방 최고의 대부호로 성장한다. 한편 소, 돼지를 잡아\n근근이 살아가던 천한 백정 돌무치는 죽어도 잊지 못할\n끔찍한 일을 당한 뒤 군도에 합류, 지리산 추설의 신 거성(新\n巨星) 도치로 거듭난다.</string>
+    <string name="thirdStory">뭉치면 백성, 흩어지면 도적!\n망할 세상을 뒤집기 위해, 백성이 주인인 새 세상을 향해\n도치를 필두로 한 군도는 백성의 적, 조윤과 한 판 승부를\n시작하는데...</string>
+    <string name="movieInformation">2014.07.23 개봉\n액션 / 137분</string>
+    <string name="movieTitle">군도</string>
+    <string name="ticketRating">예매율</string>
+    <string name="ticketRatingValue">5위 1.8%</string>
+    <string name="evalutating">평점</string>
+    <string name="attendance">누적관객수</string>
+    <string name="attendanceNum">839,399명</string>
+    <string name="evaluatingValue">8.2</string>
+    <string name="subtitleStory">줄거리</string>
+    <string name="subtitleProducer">감독/출연</string>
+    <string name="director">감독</string>
+    <string name="directorName">윤종빈</string>
+    <string name="cast">출연</string>
+    <string name="castName">하정우(도치), 강동원(조윤)</string>
+    <string name="subtitleReview">한줄평</string>
+    <string name="write">작성하기</string>
+    <string name="allView">모두 보기</string>
+    <string name="ticketing">예매하기</string>
+
+
+    <!--
+    activity_do_comment
+-->
+
+    <string name="inputRating">평점을 입력해 주세요</string>
+    <string name="inputCommentGuide">100자 이내로 작성해주세요</string>
+    <string name="save">저장</string>
+    <string name="cancel">취소</string>
+
+
+    <!--
+        activity_comment_list
+    -->
+
+    <string name="ratingValue">8.2</string>
+    <string name="participants">(1,142명 참여)</string>
+
+
+    <string name="nav_header_name">Gwonii</string>
+    <string name="nav_header_email">hc.gwnoii@gmail.com</string>
+
+    <string name="header_movie_list">영화 목록</string>
+    <string name="header_movie_detail">영화 상세</string>
+
+
+    <!--null-->
+
+    <string name="nullString">null</string>
+
+</resources>

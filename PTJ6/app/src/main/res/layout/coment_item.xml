@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    android:layout_marginBottom="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/user1"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFCCCCCC"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/ratingBar"
+        app:layout_constraintStart_toEndOf="@+id/ratingBar">
+
+        <TextView
+            android:id="@+id/tv_userId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="개인 id"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:fontFamily="sans-serif-black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_writeTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:text="작성 시간"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_userId" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:isIndicator="false"
+            android:progressTint="@android:color/holo_blue_light"
+            android:rating="5"
+            android:stepSize="0.1"
+            app:layout_constraintStart_toEndOf="@+id/tv_writeTime"
+            app:layout_constraintTop_toBottomOf="@+id/tv_userId" />
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:text="댓글 내용"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_writeTime" />
+
+        <TextView
+            android:id="@+id/tv_commentLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:text="추천"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_comment" />
+
+        <TextView
+            android:id="@+id/tv_commentLikeNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:text="추천수"
+            app:layout_constraintStart_toEndOf="@+id/tv_commentLike"
+            app:layout_constraintTop_toBottomOf="@+id/tv_comment" />
+
+        <TextView
+            android:id="@+id/tv_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:text="신고하기"
+            app:layout_constraintStart_toEndOf="@+id/tv_commentLikeNum"
+            app:layout_constraintTop_toBottomOf="@+id/tv_comment" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
